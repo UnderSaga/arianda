@@ -1,0 +1,108 @@
+.slider {
+  position: relative;
+  // padding-left: 157px;
+
+  // .swiper {
+  //   margin-right: -190px;
+  // }
+
+  .swiper-button__wrapper {
+    display: flex;
+    gap: 20px;
+    height: 50px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: relative;
+      border: 1px solid $color-text__primary-light;
+      border-radius: 32px;
+
+      svg {
+        display: none;
+      }
+    }
+
+    .swiper-button-prev {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 9px;
+        height: 16px;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' fill='none'%3e%3cpath d='M1 1C1.71569 1.41748 4.304 3.70759 6.55118 5.75005C7.86754 6.9465 7.83561 9.01884 6.4969 10.1902L1 15' stroke='%23303C4D'/%3e%3c/svg%3e");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        opacity: 1;
+        transform: scaleX(-1) translate(50%, -50%);
+      }
+    }
+
+    .swiper-button-next {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 9px;
+        height: 16px;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='9' height='16' viewBox='0 0 9 16' fill='none'%3e%3cpath d='M1 1C1.71569 1.41748 4.304 3.70759 6.55118 5.75005C7.86754 6.9465 7.83561 9.01884 6.4969 10.1902L1 15' stroke='%23303C4D'/%3e%3c/svg%3e");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .swiper-pagination__animation {
+    position: relative;
+    padding-bottom: 27px;
+
+    .swiper-pagination {
+      gap: 20px;
+      justify-content: space-between;
+
+      .swiper-pagination-bullet {
+        width: 100%;
+        height: 2px;
+        border-radius: 3px;
+        // background: $palette-green;
+
+        background: #b3dac9;
+        opacity: 1;
+
+        &-active {
+          position: relative;
+          overflow: hidden;
+
+          &::after {
+            @keyframes bg-full {
+              from {
+                width: 0;
+              }
+
+              to {
+                width: 100%;
+              }
+            }
+
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $palette-green;
+            animation-name: bg-full;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+          }
+        }
+      }
+    }
+  }
+}

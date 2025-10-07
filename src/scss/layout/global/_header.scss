@@ -1,0 +1,113 @@
+// -----------------------------------------------------------------------------
+// В этом файле прописываются все стили относящиеся к шапке сайта
+// -----------------------------------------------------------------------------
+
+#header {
+  background-color: $palette-white;
+  color: #1f2133;
+  font-size: 18px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: auto;
+    
+    &__text {
+      font-size: 14px;
+    }
+  }
+
+  &-list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+
+    &__item {
+      padding: 15px 20px;
+      border-radius: 60px;
+      background-color: #DAE5ED;
+      font-size: 24px;
+    }
+  }
+
+  &-contacts {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    gap: 10px;
+
+    .button {
+      &-round {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27' fill='none'%3e%3cpath d='M12.375 21.375C17.3456 21.375 21.375 17.3456 21.375 12.375C21.375 7.40444 17.3456 3.375 12.375 3.375C7.40444 3.375 3.375 7.40444 3.375 12.375C3.375 17.3456 7.40444 21.375 12.375 21.375Z' stroke='%23303C4D' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M23.6252 23.6252L18.7314 18.7314' stroke='%23303C4D' stroke-width='1.5' stroke-linejoin='round'/%3e%3c/svg%3e");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      &-primary {
+        content: "";
+        width: 75px;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28' fill='none'%3e%3cpath d='M23.3337 24.2667V21.4667C23.3337 19.9815 22.842 18.5571 21.9668 17.5069C21.0917 16.4567 19.9047 15.8667 18.667 15.8667H9.33366C8.09598 15.8667 6.909 16.4567 6.03383 17.5069C5.15866 18.5571 4.66699 19.9815 4.66699 21.4667V24.2667' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M13.9997 12.8333C16.577 12.8333 18.6663 10.744 18.6663 8.16667C18.6663 5.58934 16.577 3.5 13.9997 3.5C11.4223 3.5 9.33301 5.58934 9.33301 8.16667C9.33301 10.744 11.4223 12.8333 13.9997 12.8333Z' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e"),
+        url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='27' height='22' viewBox='0 0 27 22' fill='none'%3e%3cline x1='2' y1='11.25' x2='19' y2='11.25' stroke='white' stroke-width='1.5'/%3e%3cpath d='M16.5 4C17.2411 4.4632 19.9903 7.07794 22.2894 9.32157C23.504 10.5069 23.4733 12.4625 22.2352 13.6232L16.5 19' stroke='white' stroke-width='1.5'/%3e%3c/svg%3e");
+        background-position: left, right;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+// .header_list__link:hover {
+//   cursor: pointer;
+// }
+
+// .header_list__link.active > .header_list__wrapper {
+//   opacity: 1;
+//   visibility: visible;
+//   transform: translateX(100%);
+//   transition: transform 0.5s ease-in-out;
+// }
+
+// .header_list__wrapper {
+//   @include breakpoint($breakpoint-laptop) {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//   }
+
+//   position: absolute;
+//   z-index: 2;
+//   top: 0;
+//   left: 0;
+//   display: flex;
+//   flex-flow: column nowrap;
+//   width: 100%;
+//   padding-top: 80px;
+//   opacity: 0;
+//   visibility: hidden;
+//   transform: translateX(-100%);
+//   transition:
+//     transform 0.3s ease-in-out,
+//     opacity 0s 0.3s,
+//     visibility 0s 0.3s;
+// }
+
+
+
+

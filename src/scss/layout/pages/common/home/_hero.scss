@@ -1,0 +1,33 @@
+#cp-home-hero {
+  .swiper-wrapper {
+    row-gap: 20px;
+
+    .swiper-slide {
+      margin-top: 0 !important;
+    }
+  }
+
+  .swiper-button__wrapper {
+    margin-top: 30px;
+  }
+
+  .swiper-pagination {
+    position: relative;
+    width: auto;
+
+    &-bullet {
+      background: #000000;
+      color: #c0cbd3;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      opacity: 1;
+
+      &-active {
+        background: $btn-active;
+        color: $palette-green-light;
+        font-size: 22px;
+      }
+    }
+  }
+}

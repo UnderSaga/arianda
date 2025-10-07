@@ -1,0 +1,18 @@
+.projecting {
+  display: flex;
+  gap: 20px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 790px;
+  }
+
+  &__img {
+    width: 385px;
+    height: 285px;
+    border-radius: 30px;
+    background-color: $palette-green;
+  }
+}

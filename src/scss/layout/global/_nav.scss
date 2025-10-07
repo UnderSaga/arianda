@@ -1,0 +1,97 @@
+// -----------------------------------------------------------------------------
+// В этом файле прописываются все стили относящиеся к блоку навигации
+// -----------------------------------------------------------------------------
+
+.nav {
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &--header {
+    .nav__item {
+    }
+
+    .nav__link {
+    }
+  }
+
+  &--breadcrumb {
+    .nav__list {
+      display: flex;
+      gap: 4px;
+    }
+
+    .nav__item {
+      color: #9dc2b1;
+      font-size: 13px;
+
+      a {
+        color: #8fa195;
+      }
+
+      &:not(:last-child) {
+        &::after {
+          content: "-";
+          display: inline-flex;
+          padding-left: 0;
+          color: #8fa195;
+        }
+      }
+    }
+
+    .nav__link {
+    }
+  }
+
+  &--footer {
+    .nav__list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav__item {
+      &:last-child {
+        & strong {
+          padding-top: 0;
+        }
+      }
+    }
+
+    .nav__link {
+      color: $color-text__footer;
+      line-height: 150%; /* 22.5px */
+
+      strong {
+        display: block;
+        padding-top: 20px;
+        color: $color-text__white;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%; /* 27px */
+      }
+    }
+  }
+
+  &--sidebar {
+    padding-top: 65px;
+
+    .nav__list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .nav__item {
+      font-size: 24px;
+    }
+
+    .nav__link {
+    }
+  }
+}

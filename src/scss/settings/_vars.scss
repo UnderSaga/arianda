@@ -1,0 +1,55 @@
+/*
+-----------------------------------------------------------------------------
+Все переменные, которые используются в проекте
+Переменные делятся на два типа:
+- CSS-переменные, которые могут меняться от медиа-запросов
+- SASS-переменные, которые задаются один раз и являются константами
+
+Выбор типа новой переменной зависит от задачи, если нужно чтобы менялось значение,
+Например, у нас на ПК размер заголовков 48px, а на мобильных 21px, то используем
+CSS-переменные. Во всех других случаях - SASS.
+-----------------------------------------------------------------------------
+*/
+
+/* Начало CSS-переменных */
+:root {
+  /* Разное */
+  --border-radius: 30px;
+
+  /* Текст */
+  --font-title-large: 64px;
+  --font-title-medium: 48px;
+  --font-title-small: 36px;
+  --font-text-large: 24px;
+  --font-text-big: 18px;
+  --font-text-regular: 16px;
+  --font-text-small: 14px;
+  --line-height-text: 1.2;
+  --line-height-title: 0.9;
+}
+/* Конец CSS-переменных */
+
+/* Начало SASS-переменные */
+$transition-time: 0.3s;
+$border-radius-round: 9999px;
+
+$btn-active: #ee2f24;
+
+$palette-white: #ffffff;
+$palette-black: #000000;
+$palette-green: #0aaf64;
+$palette-green-light: #00dd78;
+$palette-line-gray: #e1efe8;
+$palette-bg-gray: #f3f6f6;
+$palette-gray: #e8f3f1;
+
+$color-text__primary: #1f2133;
+$color-text__primary-light: #4f5060;
+$color-text__black: #000000;
+$color-text__white: #ffffff;
+$color-text__gray: #87a095;
+$color-text__footer: #aeb1c4;
+
+$link-color: #0aaf64;
+$link-hover-color: #0aaf64 !default;
+/* Конец SASS-переменных */
