@@ -1,89 +1,55 @@
 <section id="s-feedback" class="section section--bg-blue">
   <div class="container">
     <div class="section__title">
-      У вас есть вопросы? Напишите нам
+      Свяжитесь с нами
     </div>
 
     <form class="form form-custom" action="">
 
-      <div class="form__row">
-        <div class="form__group">
-          <!-- <label for="name">Имя</label> -->
-          <input type="text" name="name" class="input__field" placeholder="Имя" required />
+      <div class="form__rows">
+        <div class="form__row">
+          <div class="form__group">
+            <!-- <label for="name">Имя</label> -->
+            <input type="text" name="name" class="input__field" placeholder="Имя" required />
+          </div>
+          <div class="form__group">
+            <!-- <label for="email">E-mail</label> -->
+            <input type="email" name="email" class="input__field" placeholder="E-mail" required />
+          </div>
         </div>
-        <div class="form__group">
-          <!-- <label for="phone">Телефон</label> -->
-          <input type="tel" name="phone" class="input__field" placeholder="Телефон" required />
-        </div>
-        <div class="form__group">
-          <!-- <label for="email">E-mail</label> -->
-          <input type="email" name="email" class="input__field" placeholder="E-mail" required />
-        </div>
-      </div>
-      <div class="form__row">
-        <div class="form__group form__group--full-width">
-          <!-- <label for="question">Вопрос</label> -->
-          <textarea class="input__field" name="question" placeholder="Вопрос" rows="1" required></textarea>
+        <div class="form__row">
+          <div class="form__group form__group--full-width">
+            <!-- <label for="question">Вопрос</label> -->
+            <textarea class="input__field" name="question" placeholder="Вопрос" rows="1" required></textarea>
+          </div>
         </div>
       </div>
 
       <div class="form__action">
-        <button class="button button-primary">Отправить</button>
+        <a class="button button-primary">Отправить</a>
         <div class="form__privacy">
           <!-- <input type="checkbox" name="form__checkbox" class="checkbox" checked> -->
           <label class="checkbox-label">
             <input type="checkbox" required checked />
             <span class="custom-checkbox"></span>
-            Нажимая на кнопку «Отправить» вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a>
+            <p>Нажимая на кнопку «Отправить» вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a></p>
           </label>
           <!-- <p>Нажимая на кнопку «Отправить» вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p> -->
         </div>
-
       </div>
-      <!-- /.form__action -->
 
-
-
-
-
-      <!-- <div class="form__wrapper">
-        <div class="form__wrapper--top">
-          <div class="input">
-            <input placeholder="Имя" autocomplete="off" type="text" class="input__field">
-            <span class="input__label"></span>
-          </div>
-          <div class="input">
-            <input placeholder="Телефон" autocomplete="off" type="tel" class="input__field">
-            <span class="input__label"></span>
-          </div>
-          <div class="input">
-            <input placeholder="E-mail" autocomplete="off" type="email" class="input__field">
-            <span class="input__label"></span>
-          </div>
+      <div class="form__links">
+        <div class="form__social">
+          <img src="/src/assets/images/resource/social/vk.svg" alt="">
         </div>
-        <input placeholder="Вопрос" class="input input__field input__question" name="user_question"></input>
-      </div> -->
-
-
-
-      <!-- <div class="form__action">
-        <span class="ba_crc desplode"></span>
-        <a class="button button_primary desplode" href="">
-          <span class="button__text">Отправить</span>
-        </a>
-      </div> -->
-
-
-      <!-- <div class="form-privacy">
-        <input type="checkbox" name="form__checkbox" id="form__checkbox">
-        <p class="form-privacy__text">Нажимая на кнопку «Отправить» вы соглашаетесь с <a href="">политикой конфиденциальности</a></span></p>
-      </div> -->
-
-
+        <div class="form__social">
+          <img src="/src/assets/images/resource/social/youtube.svg" alt="">
+        </div>
+        <div class="form__social">
+          <img src="/src/assets/images/resource/social/allmed.svg" alt="">
+        </div>
+      </div>
     </form>
-
-
-
   </div>
   <!-- /.container -->
 </section>

@@ -26,3 +26,26 @@ new Swiper("#cp-home-hero .swiper", {
     clickable: true,
   },
 });
+
+new Swiper("#cp-home-news .swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  // loop: true,
+  modules: [Navigation, Autoplay, Pagination],
+
+  autoplay: {
+    delay: 4900,
+    disableOnInteraction: false,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: "#cp-home-news .swiper-button-next",
+    prevEl: "#cp-home-news .swiper-button-prev",
+  },
+
+  pagination: {
+    el: "#cp-home-news .swiper-pagination",
+    clickable: true,
+  },
+});

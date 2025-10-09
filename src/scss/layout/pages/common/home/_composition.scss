@@ -1,0 +1,32 @@
+#cp-home-composition {
+    .composition {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__wrapper {
+            display: flex;
+            gap: 20px;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 250px;
+            height: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #DDE8F0;
+            transition: .3s;
+
+            &:hover {
+                background-color: $pallete-bg-red;
+            }
+        }
+
+        &__title {
+            font-size: 19px;
+        }
+    }
+}

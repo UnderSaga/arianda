@@ -1,12 +1,14 @@
 .button-primary {
   width: min-content;
-  padding: 10px;
+  padding: 15px 30px;
   border-radius: 60px;
   background: $btn-active;
   color: $color-text__white;
 
   &::after {
     content: "";
+    width: 27px;
+    height: 22px;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='27' height='22' viewBox='0 0 27 22' fill='none'%3e%3cline x1='2' y1='11.25' x2='19' y2='11.25' stroke='white' stroke-width='1.5'/%3e%3cpath d='M16.5 4C17.2411 4.4632 19.9903 7.07794 22.2894 9.32157C23.504 10.5069 23.4733 12.4625 22.2352 13.6232L16.5 19' stroke='white' stroke-width='1.5'/%3e%3c/svg%3e");
     background-position: center;
     background-size: 100%;
