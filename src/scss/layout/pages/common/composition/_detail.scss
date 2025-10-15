@@ -1,0 +1,52 @@
+#cp-composition-detail {
+    padding-left: 30px;
+
+    .detail {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 20px;
+
+        & .detail__item:nth-child(2) .detail__line {
+            &::after {
+                left: 25%;
+            }
+        }
+
+        & .detail__item:nth-child(3) .detail__line {
+            &::after {
+                left: 50%;
+            }
+        }
+
+        & .detail__item:nth-child(4) .detail__line {
+            &::after {
+                left: 75%;
+            }
+        }
+
+        &__item {
+            width: 655px;
+        }
+
+        &__text  {
+            max-width: 580px;
+            margin-bottom: 55px;
+        }
+
+        &__line {
+            position: relative;
+            width: 100%;
+            border-bottom: 2px solid $palette-gray;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                display: block;
+                width: 25%;
+                height: 2px;
+                background-color: $pallete-bg-red;
+            }
+        }
+    }
+}

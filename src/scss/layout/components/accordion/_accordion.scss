@@ -34,7 +34,7 @@
 
     &.is-open {
       .accordion__header {
-        color: $palette-green;
+        color: $pallete-bg-red;
 
         &::after {
           transform: rotate(-45deg);

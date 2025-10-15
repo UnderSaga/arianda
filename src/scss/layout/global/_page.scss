@@ -10,11 +10,13 @@ body.page {
   min-height: 100vh;
 
   & > main {
+    position: relative;
+    display: flex;
     flex-grow: 1;
   }
 
   .page__body {
-    width: 100%;
+    width: 80%;
     margin: 0 0 0 auto;
   }
 }
