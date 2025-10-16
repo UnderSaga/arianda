@@ -29,14 +29,14 @@
             display: flex;
             gap: 20px;
 
-            & .composition__item:nth-child(2) .composition__line {
+            & .effect__item:nth-child(2) .effect__line {
                 &::after {
                     top:50%;
                     transform:translate(-50%, -50%);
                 }
             }
 
-            & .composition__item:nth-child(3) .composition__line {
+            & .effect__item:nth-child(3) .effect__line {
                 &::after {
                     top: 100%;
                     transform:translate(-100%, -100%);
