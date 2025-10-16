@@ -1,0 +1,59 @@
+#ap-integrations-table {
+    .table {
+        width: 100%;
+        border: none;
+        border-collapse: collapse;
+
+        &__cell {
+            width: 665px;
+            max-width: 665px;
+            padding: 30px;
+            border: 1px solid #ced7e4;
+
+            
+            color: #303C4D;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: -0.36px;
+
+            &--right {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: -0.32px;
+            }
+
+            &--full {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        & tr:first-child td {
+            border-top: none;
+        }
+
+        & tr:last-child td {
+            border-bottom: none;
+        }
+
+        & tr td:first-child {
+            border-left: none;
+        }
+
+        & tr td:last-child {
+            border-right: none;
+        }
+
+        &__link {
+            color: $pallete-bg-red;
+            text-decoration: underline;
+        }
+
+        ol {
+            list-style-position: inside;
+            list-style-type: disc;
+        }
+    }
+}

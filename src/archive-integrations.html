@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<include src="layout/head.html"></include>
+
+
+<body class="page">
+  <include src="layout/header.html"></include>
+
+  <main>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar__wrapper">
+        <ol>
+          <li>Сертификаты и дипломы</li>
+          <li>Технические характеристики</li>
+          <li>Лицензионная политика</li>
+          <li>Внедрение и настройка</li>
+          <li>Эксплуатация</li>
+          <li>Интеграционные возможности</li>
+          <li>Электронный документооборот</li>
+          <li>СМИ о МИС «Ариадна»</li>
+          <li>Журнал изменений МИС</li>
+        </ol>
+      </div>
+      <div class="sidebar__logo">
+        <img src="./assets/images/resource/social/allmed.svg" alt="">
+      </div>
+    </div>
+    <!-- <div> -->
+    <div id="ap-integrations" class="page__body">
+
+      <section id="ap-integrations-hero" class="section">
+        <include src="./layout/block/breadcrumbs.html"></include>
+        <div class="section__title">Интеграция</div>
+        
+        <div class="hero">
+          <div class="hero__image"></div>
+          <div class="hero__content">
+            <div class="hero__title">Интеграционные возможности</div>
+            <div class="hero__text">
+              <p>В МИС «Ариадна» предусмотрены механизмы интеграции с другими информационными системами – взаимодействие с системами хранения изображений, двунаправленный обмен данными с ЛИС других производителей (если не используется собственный модуль ЛИС «Ариадна.NLab»), выгрузка данных в бухгалтерские программы, подготовка данных реестров оказанных услуг в формате страховых организаций.</p>
+              <p>Для разработки новых интеграций в МИС «Ариадна» предусмотрен специальный программно-аппаратный комплекс PANDORA BOX. Мы можем подключать не только оборудование, работающее на стандартах (HL7, ASTM, DICOM), но и любое другое оборудование, поддерживающее обмен через CSV, DBF, XML, JSON и т.д. Для подключения нового оборудования достаточно иметь сервисную инструкцию и описание форматов обмена. Уже подключены сотни лабораторных анализаторов, комплексы ЭКГ, ФД и многое другое.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ap-integrations-support" class="section">
+        <div class="support">
+          <div class="support__data">
+            <div class="support__title">Поддержка периферийного оборудования</div>
+            <div class="support__text">
+              <p>МИС «Ариадна» поддерживает широкий спектр подключаемых устройств, а именно: различные сканеры штрихкодов, принтеры этикеток (GODEX, ZEBRA, DATAMAX),  контрольно-кассовая техника (фискальные регистраторы), банковские терминалы (Ingenico, Verifone и прочие), считыватели магнитных и смарт-карт, терминалы сбора данных, планшеты для электронной подписи Wacom, системы оптического распознавания, СКУД (системы контроля и управления доступом) и многое другое.</p>
+            </div>
+          </div>
+          <div class="support__wrapper">
+            <div class="support__item">
+              <div class="support__line"></div>
+              <div class="support__content">
+                <div class="support__img"></div>
+                <div class="support__title">При выборе сканеров штрихкодов предпочтение стоит отдать моделям, эмулирующим ввод. Такими качествами обладают все сканеры, имеющие тип подключения «в разрыв PS/2 порта» и USB-HID.</div>
+              </div>
+            </div>
+
+            <div class="support__item">
+              <div class="support__line"></div>
+              <div class="support__content">
+                <div class="support__img"></div>
+                <div class="support__title">Виды штрихкодов, доступных для считывания: Code 39, Code 93, Code 128, Codebar, European Article Number (EAN), ITF-14, MSI Barcode, Universal Product Code, а также двумерные: PDF417, Aztec Code, Data Matrix, MaxiCode, QR-код, Microsoft Tag.</div>
+              </div>
+            </div>
+
+            <div class="support__item">
+              <div class="support__line"></div>
+              <div class="support__content">
+                <div class="support__img"></div>
+                <div class="support__title">Если планируется использование ККМ (контрольно-кассовых машин), то на данный момент МИС «Ариадна» успешно работает с кассами Феликс (производитель АТОЛ) и кассами Штрих (производитель ШТРИХ). Однако при использовании ККМ класса Штрих следует убедиться, что устройство полностью поддерживается драйвером производителя версии 4.6 и выше.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="ap-integrations-table" class="section">
+
+        <div class="section__title">В МИС «Ариадна» существуют готовые интеграционные сервисы и предусмотрены модули для разработки новых интеграционных сервисов: </div>
+        <table class="table">
+          <tr>
+            <td class="table__cell table__cell--left">Интеграции с лабораторными информационными системами</td>
+            <td class="table__cell table__cell--right">Ситилаб, Инвитро, Хеликс, CMD (Москва), ЦДМ (центр доказательной медицины), КДЛ, UNIM, Де Жени и др.</td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Системы самозаписи пациентов</td>
+            <td class="table__cell table__cell--right"><a href="www.napopravku.ru" class="table__link">НаПоправку</a>, <a href="www.prodoctorov.ru" class="table__link">Про Докторов</a>, СберЗдоровье (DocDoc, Docdoc.ru, Sberhealth.ru)</td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Интеграции с системами IP-телефонии и Call-центрами</td>
+            <td class="table__cell table__cell--right">Oktell, Avaya, Asterisk, Infinity, MedVox</td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Интеграции с провайдерами телеком-услуг для отправки сообщений через СМС-шлюзы, мессенджеры, электронную почту</td>
+            <td class="table__cell table__cell--right">
+              <ul>
+                <li>Stream-telecom, Мегафон, МТС и др.</li>
+              </ul>
+              Отправка СМС по любому формализованному сценарию, например:
+              <ol>
+                <li>Информирование пациентов о записи на прием к врачу;</li>
+                <li>Информирование пациентов о готовности лаб. результатов;</li>
+                <li>Информирование врачей о записи пациентов на прием;</li>
+                <li>Информирование врачей о готовности лаб. результатов, критических показателях (сильных отклонениях от нормы), рисках развития нежелательных явлений, исследованиях CITO и пр.</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Платформы для работы с мессенджерами</td>
+            <td class="table__cell table__cell--right">EDNA, Chat2Desk</td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Интеграция с системами контроля управления доступом (СКУД):</td>
+            <td class="table__cell table__cell--right">Parsec, GATE и др.</td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Интеграции с кассовым и банковским оборудованием для соответствия ФЗ-54</td>
+            <td class="table__cell table__cell--right">АТОЛ, ШТРИХ</td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Подключение банковских терминалов</td>
+            <td class="table__cell table__cell--right">
+              <ol>
+                <li>ВТБ-24</li>
+                <li>Газпром</li>
+                <li>Сбербанк (SBRFCOM)</li>
+                <li>Терминалы, поддерживающие библиотеки ARCUS, INPAS</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Интеграция с платежными системами (эквайринг)</td>
+            <td class="table__cell table__cell--right">
+              <ol>
+                <li>PayKeeper</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Интеграция с банковскими системами для оплаты с помощью СПБ (QR-кода)</td>
+            <td class="table__cell table__cell--right">
+              <ol>
+                <li>Райффайзен Банк, ВТБ-24, Сбербанк и др.</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Интеграции с PACS-серверами</td>
+            <td class="table__cell table__cell--right">
+              Fuji, Архимед, SiemensSyngo Plaza, Электрон, DigiPax, Миллениум (ООО Паритет-Рентген), DCM4CHEE, РИС+PACS (РИС «Комета») и др.
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Интеграция с медицинским оборудованием, в том числе с системами и аппаратами функциональной диагностики</td>
+            <td class="table__cell table__cell--right">
+              <ol>
+                <li>Валента</li>
+                <li>Easy-Ekg (Ates-medica)</li>
+                <li>Astraia (система пренатальной диагностики)</li>
+                <li>Нейрософт</li>
+                <li>Микард</li>
+                <li>Кардиологический комплекс «Кардиометр-МТ»</li>
+                <li>Передвижной рентгенологический комплекс</li>
+                <li>и др.</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Системы распознавания речи</td>
+            <td class="table__cell table__cell--right">
+              Voice2Med (ЦРТ)
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Телеконференции</td>
+            <td class="table__cell table__cell--right">
+              Система телеконференцсвязи TrueConf
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Система стерилизации</td>
+            <td class="table__cell table__cell--right">
+              Система контроля оборота и обработки медицинского инструментария (СКООМИ) Трекер (компания «АСМед»)
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Система контроля оборота и обработки медицинского инструментария (СКООМИ) Трекер (компания «АСМед»)</td>
+            <td class="table__cell table__cell--right">
+              HEN, Labeller (Лэйбеллер РОБОТ ФЕЛИКС)
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Системы поддержки принятия врачебных решений</td>
+            <td class="table__cell table__cell--right">
+              Сервис «Электронный клинический фармаколог» (компании Соцмедика (Фармэксперт)), Сервис «Хранение и подбор клинических рекомендаций» в составе РЕГИЗ (РЕГИЗ.КР)
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Аппараты для считывания документов</td>
+            <td class="table__cell table__cell--right">
+              <ol>
+                <li>Regula</li>
+                <li>Promobot</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Интеграция с прочим специализированным оборудованием</td>
+            <td class="table__cell table__cell--right">
+              <ol>
+                <li>Принтер браслетов пациентов</li>
+                <li>Терминал сбора данных</li>
+                <li>Wacom (планшет для цифровой электронной подписи)</li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Автоматизированные голосовые информаторы</td>
+            <td class="table__cell table__cell--right">
+              Рупор-Блиц, MedVox, Call-Office
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--left">Интеграция с ФСС</td>
+            <td class="table__cell table__cell--right">
+              Электронные листки нетрудоспособности, электронные родовые сертификаты
+            </td>
+          </tr>
+        </table>
+        <table class="table">
+          <tr></tr>
+          <tr>
+            <td class="table__cell table__cell--full">Интеграции с системами Парус и 1С в разрезе кадров, передачи данных по складу, экспорта данных по счетам и др.</td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--full">Интеграция с системой Мониторинга движения лекарственных препаратов (МДЛП) национальной платформы «Честный знак».</td>
+          </tr>
+          <tr>
+            <td class="table__cell table__cell--full"><a href="" class="table__link">Документация API проекта «Запись на приём» (appointment-web)</a></td>
+          </tr>
+        </table>
+
+      </section>
+
+    </div>
+    <!-- /.page__body -->
+    <!-- </div> -->
+
+  </main>
+  
+
+  <include src="layout/block/feedback.html"></include>
+
+  <include src="layout/footer.html"></include>
+  <include src="layout/modal/callback.html"></include>
+
+</body>
+
+</html>
