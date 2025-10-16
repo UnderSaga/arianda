@@ -1,4 +1,7 @@
-#cp-system-documents {
+#cp-specifications-documents {
+    padding-top: 0;
+    padding-bottom: 0;
+
     .documents {
         &__item {
             display: flex;
@@ -29,6 +32,10 @@
                     background-color: #c6dae9;
                 }
             }
+        }
+
+        &__title {
+            max-width: 570px;
         }
 
         &__content {
