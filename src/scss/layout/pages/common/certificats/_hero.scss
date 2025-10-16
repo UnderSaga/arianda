@@ -1,0 +1,102 @@
+#cp-certificats-hero {
+  .swiper-wrapper {
+    row-gap: 20px;
+
+    .swiper-slide {
+      margin-top: 0 !important;
+    }
+  }
+
+  .hero {
+    &__item {
+      transition: .3s;
+    
+      &:hover {
+        .hero__image {
+          background-color: #e1edf3;
+
+          .button-get {
+            filter: brightness(.8);
+          }
+        }
+
+        .hero__title {
+          color: $color-text__primary;
+        }
+      }
+    }
+
+    &__text {
+      max-width: 790px;
+      margin-bottom: 30px;
+    }
+
+    &__image {
+      margin-bottom: 10px;
+      padding: 20px 17px;
+      border-radius: 10px;
+      background-color: #ebeff1;
+
+      transition: .3s;
+
+      picture {
+        overflow: hidden;
+        
+        img {
+          border-radius: 10px 10px 20px;
+        }
+      }
+
+      .button-get {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 2px 12px;
+        background-color: $pallete-bg-red;
+        
+        &::after {
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='27' height='28' viewBox='0 0 27 28' fill='none'%3e%3cline x1='2' y1='13.75' x2='19' y2='13.75' stroke='white' stroke-width='1.5'/%3e%3cpath d='M16.5 6.5C17.2411 6.9632 19.9903 9.57794 22.2894 11.8216C23.504 13.0069 23.4733 14.9625 22.2352 16.1232L16.5 21.5' stroke='white' stroke-width='1.5'/%3e%3c/svg%3e");
+        }
+      }
+    }
+
+    &__title {
+      color: #63778B;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.28px;
+
+      transition: .3s;
+    }
+  }
+
+  .swiper-button__wrapper {
+    margin-top: 30px;
+  }
+
+  .swiper-pagination {
+    @include breakpoint($breakpoint-notebook) {
+      display: none;
+    }
+
+    position: relative;
+    width: auto;
+
+    &-bullet {
+      width: auto;
+      background: none;
+      color: #c0cbd3;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      opacity: 1;
+
+      &-active {
+        background: none;
+        color: $color-text__primary;
+        font-size: 22px;
+      }
+    }
+  }
+}

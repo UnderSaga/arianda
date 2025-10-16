@@ -13,6 +13,7 @@ import './layout/menu';
 
 import './layout/page/home';
 import './layout/page/about';
+import './layout/page/certificats';
 import './component/accordion';
 // import './component/select';
 // import './component/tabs';
