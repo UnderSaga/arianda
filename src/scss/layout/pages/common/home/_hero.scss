@@ -6,6 +6,10 @@
   background-color: rgba(219, 234, 245, 0.86);
   background-image: url("../../../../../assets/images/global/bg/hero.png"), url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='454' viewBox='0 0 1920 454' fill='none'%3e%3cg filter='url(%23filter0_n_1_23338)'%3e%3cpath d='M0 0H1920V454H0V0Z' fill='%23DBEAF5' fill-opacity='0.86'/%3e%3c/g%3e%3cdefs%3e%3cfilter id='filter0_n_1_23338' x='0' y='0' width='1920' height='454' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-opacity='0' result='BackgroundImageFix'/%3e%3cfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3e%3cfeTurbulence type='fractalNoise' baseFrequency='1.25 1.25' stitchTiles='stitch' numOctaves='3' result='noise' seed='1116'/%3e%3cfeColorMatrix in='noise' type='luminanceToAlpha' result='alphaNoise'/%3e%3cfeComponentTransfer in='alphaNoise' result='coloredNoise1'%3e%3cfeFuncA type='discrete' tableValues='1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 '/%3e%3c/feComponentTransfer%3e%3cfeComposite operator='in' in2='shape' in='coloredNoise1' result='noise1Clipped'/%3e%3cfeFlood flood-color='rgba(0, 0, 0, 0.11)' result='color1Flood'/%3e%3cfeComposite operator='in' in2='noise1Clipped' in='color1Flood' result='color1'/%3e%3cfeMerge result='effect1_noise_1_23338'%3e%3cfeMergeNode in='shape'/%3e%3cfeMergeNode in='color1'/%3e%3c/feMerge%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e");
 
+  &.section {
+    padding: 40px 160px;
+  }
+  
   .hero-slide {
     &__title {
       font-weight: 500;

@@ -1,4 +1,8 @@
 #cp-home-composition {
+    &.section {
+        padding: 40px 160px;
+    }
+    
     .composition {
         display: flex;
         flex-direction: column;
