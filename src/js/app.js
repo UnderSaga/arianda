@@ -15,6 +15,8 @@ import './layout/page/home';
 import './layout/page/about';
 import './layout/page/certificats';
 import './layout/page/smi';
+import './layout/page/news';
+import './layout/page/news-detail';
 import './component/accordion';
 // import './component/select';
 // import './component/tabs';
